@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Namo Marriage Bureau</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff7f5;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgb(114, 25, 25);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-text span {
+    color: #b22222;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #555;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #800000, #d4af37);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* IMAGES */
+.hero img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-box {
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* sab images same size + no distortion */
+    transition: 0.4s;
+}
+
+.img-box img:hover {
+    transform: scale(1.1);   /* thoda zoom effect 🔥 */
+}
+
+/* GALLERY */
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background: #800000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.frame {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+
+    width: 80px;   /* size increase karo yaha */
+    height: 80px;
+
+    border-radius: 50%;   /* circle banane ke liye */
+    overflow: hidden;     /* extra image cut ho jayegi */
+
+    border: 3px solid white; /* optional stylish border */
+}
+
+.frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* image stretch nahi hogi, properly fit hogi */
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">Namo Marriage Bureau</div>
+    <div class = "frame">
+        <img src = "mahavir.jpg" type ="image" width = "50px" height = "50px">
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Find Your <span>Perfect Life Partner</span> 💍</h1>
+        <p>Where two souls, two families & two traditions become one beautiful journey.</p>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/919255455242?text=Hi%20I%20want%20to%20register%20in%20Namo%20Marriage%20Bureau" target="_blank" class="btn">Join Now</a>
+        <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdSNbjpWI1Q1Jaa2_S2MNjbCV3-iVo5dV7LBQ1fJdB9KMWZGA/viewform?usp=publish-editor" target="_blank" class="btn">Register Here</a>    
+
+    </div>
+
+    <img src="pap.jpg" type = "image">
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">💑 Verified Profiles</div>
+        <div class="card">🔍 Personalized Matchmaking</div>
+        <div class="card">💬 Family Assistance</div>
+        <div class="card">📞 24x7 Support</div>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div class="cards">
+    <div class="img-box">
+        <img src="couple.jpg">
+    </div>
+
+    <div class="img-box">
+        <img src="hug.jpg">
+    </div>
+
+    <div class="img-box">
+        <img src="sindoor.jpg">
+    </div>
+</div>
+
+<!-- WHY US -->
+<div class="section">
+    <h2>Why Choose Us?</h2>
+    <div class="cards">
+        <div class="card">✔ Trusted by Families</div>
+        <div class="card">✔ 100% Privacy</div>
+        <div class="card">✔ No registration fees</div>
+        <div class="card">✔ Indian Values</div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2014 Namo Marriage Bureau | Made with ❤️ in India 
+    <div>Only Jain & Aggarwal Families
+    </div>
+</div>
+
+</body>
+</html>
